@@ -4,6 +4,7 @@ from django.http import HttpResponse
 
 
 def index(request):
-    return HttpResponse("Hello, world. You're at the polls index.")
+    alican = 5
+    return render(request,'index.html', {'ertan':alican})
 def lecture(request):
     return HttpResponse("Hello, world. You're at the polls index.")
