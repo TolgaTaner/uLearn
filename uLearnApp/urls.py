@@ -1,9 +1,9 @@
 from django.conf.urls import url, include
 
-from . import views
+from .views import index,lecture
 
 urlpatterns = [
-    url(r'^$', views.index, name='index'),
-    url(r'lectures', views.lecture, name='index'),
+    url(r'^$', index.anaSayfa, name='index'),
+    url(r'lectures', lecture.lecture, name='index'),
 
 ]
