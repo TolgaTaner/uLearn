@@ -79,8 +79,8 @@ DATABASES = {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'db',
         'USER': 'alican',
-        'PASSWORD': '123123asdasd',
-        'HOST': '104.155.127.174',
+        'PASSWORD': 'frozen4192',
+        'HOST': '46.101.210.30',
         'PORT': '3306',
     }
 }
