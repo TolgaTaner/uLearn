@@ -108,7 +108,9 @@ $(document).ready(function(){
     <!-- //banner -->
 	<div class="courses_box1">
 	   <div class="container">
-	   	  <form class="login" action="register">
+
+	   	  <form class="login" action="register" method="post">
+          {% csrf_token %}
                 <p class="lead">Register New Account</p>
 
                 <div class="form-group">
@@ -124,14 +126,14 @@ $(document).ready(function(){
                     <input type="password" class="required form-control" placeholder="Password *" name="password" value="">
                 </div>
                 <div class="form-group">
-                    <input type="password" class="required form-control" placeholder="Conform Password *" name="Conform Password" value="">
+                    <input type="password" class="required form-control" placeholder="Conform Password *" name="Conform_password" value="">
                 </div>
                 <div class="form-group">
-                    <input type="text" autocomplete="off" class="required form-control" placeholder="Conform Email *" name="conform email" value="">
+                    <input type="text" autocomplete="off" class="required form-control" placeholder="Conform Email *" name="conform_email" value="">
                 </div>
                 <div style="text-align:left;" class="form-group">
                 <label>Date of Birth</label>
-                  <input type="date" class="required form-control" id="exampleInputDOB1" placeholder="Date of Birth">
+                  <input type="date" class="required form-control" id="exampleInputDOB1" placeholder="Date of Birth" name="bdate">
                 </div>
                 <div class="form-group">
                     <input type="submit" class="btn btn-primary btn-lg1 btn-block" name="submit" value="Register">
