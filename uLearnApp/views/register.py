@@ -14,3 +14,4 @@ def register(request):
     user.save()
     myuser.save()
     return render(request,'register.html')
+    
