@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+{% load staticfiles%}
+{% block content %}
+
+
+    <div class="container">
+<div class="col-md-12">
+  <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+      <h4 class="modal-title" id="myModalLabel"> <strong>Instructor Information</strong></h4>
+      </div>
+  <div class="modal-body">
+      <center>
+      <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcRbezqZpEuwGSvitKy3wrwnth5kysKdRqBW54cAszm_wiutku3R" name="aboutme" width="140" height="140" border="0" class="img-circle"></a>
+      <h3 class="media-heading">Joe Sixpack <small>USA</small></h3>
+      <span><strong>Skills: </strong></span>
+          <span class="label label-warning">HTML5/CSS</span>
+          <span class="label label-info">Adobe CS 5.5</span>
+          <span class="label label-info">Microsoft Office</span>
+          <span class="label label-success">Windows XP, Vista, 7</span>
+      </center>
+      <hr>
+      <center>
+      <p class="text-left"><strong>About me </strong><br>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut sem dui, tempor sit amet commodo a, vulputate vel tellus.</p>
+      <br>
+      </center>
+  </div>
+
+  <div class="modal-header">
+      <button type="button" class="close" data-dismiss="modal" aria-hidden="true"></button>
+      <h4 class="modal-title" id="myModalLabel"> <strong>Instructor Courses</strong></h4>
+      </div>
+      <div class="grid_1" style="margin-top:20px">
+       <div class="container">
+             <div class="col-md-12 grid_1_right">
+               <div style="margin-top:-80px; margin-left:-30px" class="admission">
+                  <div class="container">
+                    <div class="faculty_top">
+                     <div class="col-md-4 faculty_grid">
+                       <figure class="team_member">
+                         <img src="{%static 'images/fc.jpg'%}" class="img-responsive wp-post-image" alt=""/>
+                         <div></div>
+                         <figcaption><h3 class="person-title"><a href="event_single.html">Course Video 1 </a></h3>
+                           <span class="person-deg">Olcay Taner Yıldız</span>
+                           <p><a>102 minutes</a></p>
+                           <div class="person-social">
+                             <ul class="social-person">
+                               <li><a href="watch.html"><h3>Watch now!<h3><a><li>
+                               </ul>
+                           </div>
+                          </figcaption>
+                        </figure>
+                     </div>
+
+                 </div>
+               </div>
+       </div>
+       <div class="clearfix"> </div>
+      </div>
+      </div>
+      </div>
+</div>
+
+    </div>
+    <!-- Modal -->
+
+
+{% endblock content %}
