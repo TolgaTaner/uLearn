@@ -21,7 +21,7 @@ body a{
 	-ms-transition:0.5s all;
 }
 .navbar-default {
-    background-color:#f1b458 !important;
+    background-color:orange !important;
     border-color:#f1b458;
     border-radius: 0px;
 }
