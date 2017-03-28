@@ -1,9 +1,58 @@
-<!--A Design by W3layouts
-Author: W3layout
-Author URL: http://w3layouts.com
-License: Creative Commons Attribution 3.0 Unported
-License URL: http://creativecommons.org/licenses/by/3.0/
--->
+{% extends 'base.html' %}
+{% load staticfiles%}
+{% block content %}
+<!-- banner -->
+  <div class="courses_banner">
+  	<div class="container">
+  		<h3>Register</h3>
+  		<p class="description">
+             Please register to uLearn using instructions below.
+        </p>
+        <div class="breadcrumb1">
+            <ul>
+                <li class="icon6"><a href="/">Home</a></li>
+                <li class="current-page">Register</li>
+            </ul>
+        </div>
+  	</div>
+  </div>
+    <!-- //banner -->
+	<div class="courses_box1">
+	   <div class="container">
+
+	   	  <form class="login" action="register" method="post">
+          {% csrf_token %}
+                <p class="lead">Register New Account</p>
+
+                <div class="form-group">
+                    <input type="text" autocomplete="off" class="required form-control" placeholder="E-mail *" name="email" value="">
+                </div>
+                <div class="form-group">
+                    <input type="text" autocomplete="off" class="required form-control" placeholder="Name *" name="name" value="">
+                </div>
+                <div class="form-group">
+                    <input type="text" autocomplete="off" class="required form-control" placeholder="Surname *" name="surname" value="">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="required form-control" placeholder="Password *" name="password" value="">
+                </div>
+                <div class="form-group">
+                    <input type="password" class="required form-control" placeholder="Confirm Password *" name="Conform_password" value="">
+                </div>
+
+                <div style="text-align:left;" class="form-group">
+                <label>Date of Birth</label>
+                  <input type="date" class="required form-control" id="exampleInputDOB1" placeholder="Date of Birth" name="bdate">
+                </div>
+                <div class="form-group">
+                    <input type="submit" class="btn btn-primary btn-lg1 btn-block" name="submit" value="Register">
+                </div>
+                <p>Already have an account? <a href="login.html">Sign In</a></p>
+            </form>
+	   </div>
+	</div>
+{% endblock content %}
+
 <!DOCTYPE HTML>
 <html>
 <head>
@@ -83,7 +132,7 @@ $(document).ready(function(){
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
           <ul class="nav navbar-nav nav_1">
-              <li><a href="index.html">Home</a></li>
+              <li><a href="/">Home</a></li>
               <li><a href="about.html">About</a></li>
               <li class="last"><a href="login.html">Contacts</a></li>
           </ul>
@@ -99,7 +148,7 @@ $(document).ready(function(){
         </p>
         <div class="breadcrumb1">
             <ul>
-                <li class="icon6"><a href="index.html">Home</a></li>
+                <li class="icon6"><a href="/">Home</a></li>
                 <li class="current-page">Register</li>
             </ul>
         </div>
@@ -108,8 +157,11 @@ $(document).ready(function(){
     <!-- //banner -->
 	<div class="courses_box1">
 	   <div class="container">
-	   	  <form class="login">
-                <p class="lead">Register a New Account</p>
+
+	   	  <form class="login" action="register" method="post">
+          {% csrf_token %}
+                <p class="lead">Register New Account</p>
+
                 <div class="form-group">
                     <input type="text" autocomplete="off" class="required form-control" placeholder="E-mail *" name="email" value="">
                 </div>
@@ -123,14 +175,12 @@ $(document).ready(function(){
                     <input type="password" class="required form-control" placeholder="Password *" name="password" value="">
                 </div>
                 <div class="form-group">
-                    <input type="password" class="required form-control" placeholder="Conform Password *" name="Conform Password" value="">
+                    <input type="password" class="required form-control" placeholder="Confirm Password *" name="Conform_password" value="">
                 </div>
-                <div class="form-group">
-                    <input type="text" autocomplete="off" class="required form-control" placeholder="Conform Email *" name="conform email" value="">
-                </div>
+
                 <div style="text-align:left;" class="form-group">
                 <label>Date of Birth</label>
-                  <input type="date" class="required form-control" id="exampleInputDOB1" placeholder="Date of Birth">
+                  <input type="date" class="required form-control" id="exampleInputDOB1" placeholder="Date of Birth" name="bdate">
                 </div>
                 <div class="form-group">
                     <input type="submit" class="btn btn-primary btn-lg1 btn-block" name="submit" value="Register">
@@ -143,7 +193,7 @@ $(document).ready(function(){
     <div class="container">
       <div class="clearfix"> </div>
       <div class="copy">
-         <p>Copyright © 2017 uLearn . All Rights Reserved  | Developed by <a href="" target="_blank">uLearn</a> </p>
+         <p>Copyright © 2017 uLearn . All Rights Reserved  | Developed by <a href="/" target="_blank">uLearn</a> </p>
         </div>
     </div>
   </div>

@@ -508,7 +508,7 @@ ul.social-slide li i.mac{
 .details{
 	background:#2f374c;
 	padding:3em 0;
-	
+
 }
 .input-group {
     width: 100%;
@@ -1834,7 +1834,7 @@ ul.about_links li a:hover{
 }
 /* -- admission --*/
 .admission{
-	padding:5em 0;
+	padding:0;
 }
 .admission h1{
 	color:#000;
@@ -2645,7 +2645,7 @@ ul.nav_1 li {
     padding: 3em 0 0 0;
 }
 .advantage, .admission, .services, .service_3, .features{
-    padding: 3em 0;
+    padding:0;
 }
 .admission_right {
     padding: 0;

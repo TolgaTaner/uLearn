@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+{% load staticfiles%}
+{% block content %}
+<!-- banner -->
+  <div class="courses_banner">
+  	<div class="container">
+  		<h3>Your Search Result</h3>
+  		<p class="description">
+             Keyword: Mathematics
+        </p>
+        <div class="breadcrumb1">
+            <ul>
+                <li class="icon6"><a href="/">Home</a></li>
+                <li class="current-page">Search Result</li>
+            </ul>
+        </div>
+  	</div>
+  </div>
+    <!-- //banner -->
+    <div class="admission" style="padding-top:40px">
+       <div class="container">
+         <div class="faculty_bottom">
+          <div class="col-md-4 faculty_grid">
+            <figure class="team_member">
+            	<img src="{%static 'images/fc.jpg'%}" class="img-responsive wp-post-image" alt=""/>
+              <div></div>
+              <figcaption><h3 class="person-title"><a href="event_single.html">Search Result Video 1 </a></h3>
+                <span class="person-deg">Olcay Taner Yıldız</span>
+                <p><a>102 minutes</a></p>
+               </figcaption>
+             </figure>
+          </div>
+
+          <div class="clearfix"> </div>
+         </div>
+         <ul class="pagination">
+          <li class="active"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+         </ul>
+      </div>
+    </div>
+{% endblock content %}
