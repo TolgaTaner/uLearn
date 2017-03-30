@@ -53,6 +53,7 @@ $(document).ready(function(){
   	         <a class="navbar-brand" style="text-transform:none" href="/">uLearn</a>
   	    </div>
   	    <!--/.navbar-header-->
+        {%if not user.isauthenticated%}
   	    <div class="navbar-collapse collapse" id="bs-example-navbar-collapse-1" style="height: 1px;">
   	        <ul class="nav navbar-nav">
   		        <li class="dropdown">
@@ -73,6 +74,13 @@ $(document).ready(function(){
 
   		     </ul>
   	    </div>
+        {%endif%}
+        {%if user.isauthenticated%}
+        SELAM
+
+        {%endif%}
+
+
   	    <div class="clearfix"> </div>
   	  </div>
   	    <!--/.navbar-collapse-->

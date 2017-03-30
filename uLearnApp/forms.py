@@ -7,9 +7,17 @@ class RegisterForm(forms.ModelForm):
         name = forms.CharField(widget = forms.TextInput(attrs={'class': 'required form-control', 'placeholder': 'Name*'}),label = '')
         surname = forms.CharField(widget = forms.TextInput(attrs={'class': 'required form-control', 'placeholder': 'Surname*'}),label = '')
         password = forms.CharField(widget = forms.PasswordInput(attrs={'class': 'required form-control', 'placeholder': 'Password*'}),label = '')
-        conform_password = forms.CharField(widget = forms.PasswordInput(attrs={'class': 'required form-control', 'placeholder': 'Conform password*'}),label = '')
+        conform_password = forms.CharField(widget = forms.PasswordInput(attrs={'class': 'form-control', 'placeholder': 'Conform password*'}),label = '')
         birth_date = forms.CharField(widget = forms.TextInput(attrs={'type':'date','class':'required form-control','id':'exampleInputDOB1'}),label = '')
         user = User()
         class Meta:
             model = MyUser
             fields = ['birth_date']
+
+class loginForm(forms.Form):
+        email = forms.CharField(widget = forms.EmailInput(attrs={'class': 'required form-control', 'placeholder': 'Email...'}),label = '')
+        password = forms.CharField(widget = forms.PasswordInput(attrs={'class': 'required form-control', 'placeholder': 'Password...'}),label = '')
+
+class uploadForm(forms.Form):
+        title = forms.CharField()
+        file = forms.FileField()
