@@ -73,7 +73,7 @@ WSGI_APPLICATION = 'uLearn.wsgi.application'
 
 # Database
 # https://docs.djangoproject.com/en/1.10/ref/settings/#databases
-
+#changed to local here
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
