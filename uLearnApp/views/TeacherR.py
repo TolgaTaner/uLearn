@@ -20,7 +20,7 @@ def TeacherR(request):
             form_user.user = user
             form_user.birth_date = birth_date
             form_user.save()
-            return HttpResponseRedirect('/')
+            return HttpResponseRedirect('/')    
 
         else:
             form = RegisterForm()
